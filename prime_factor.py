@@ -3,8 +3,8 @@ class PrimeFactor:
         factor = []
 
         if num == 2 :
-            factor.append(2)
+            factor.append(num)
         elif num == 3 :
-            factor.append(3)
+            factor.append(num)
 
         return factor
