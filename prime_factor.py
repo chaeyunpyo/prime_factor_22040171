@@ -2,21 +2,11 @@ class PrimeFactor:
     def factorial(self, num):
         factor = []
 
-
-        if num > 1 :
-            if num == 4:
-                while num > 1:
-                    if num % 2 == 0:
-                        factor.append(2)
-                        num /= 2
-            if num == 6:
-                while num > 1:
-                    if num % 2 == 0:
-                        factor.append(2)
-                        num /= 2
-                    if num % 3 == 0:
-                        factor.append(3)
-                        num /= 3
-            else : factor.append(num)
-
+        divide = 2
+        while num > 1:
+            if num % divide == 0:
+                factor.append(divide)
+                num = num // divide
+            else :
+                divide += 1
         return factor
