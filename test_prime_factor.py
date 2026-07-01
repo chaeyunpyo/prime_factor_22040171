@@ -1,0 +1,31 @@
+import pytest
+
+from prime_factor import PrimeFactor
+
+def test_prime_factor_of_1():
+    prime_factor = PrimeFactor()
+    assert prime_factor.factorial(1) == []
+
+def test_prime_factor_of_2():
+    prime_factor = PrimeFactor()
+    assert prime_factor.factorial(2) == [2]
+
+def test_prime_factor_of_3():
+    prime_factor = PrimeFactor()
+    assert prime_factor.factorial(3) == [3]
+
+def test_prime_factor_of_4():
+    prime_factor = PrimeFactor()
+    assert prime_factor.factorial(4) == [2, 2]
+
+def test_prime_factor_of_5():
+    prime_factor = PrimeFactor()
+    assert prime_factor.factorial(6) == [2, 3]
+
+def test_prime_factor_of_6():
+    prime_factor = PrimeFactor()
+    assert prime_factor.factorial(9) == [3, 3]
+
+def test_prime_factor_of_7():
+    prime_factor = PrimeFactor()
+    assert prime_factor.factorial(12) == [2, 2, 3]
