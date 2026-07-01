@@ -9,6 +9,14 @@ class PrimeFactor:
                     if num % 2 == 0:
                         factor.append(2)
                         num /= 2
+            if num == 6:
+                while num > 1:
+                    if num % 2 == 0:
+                        factor.append(2)
+                        num /= 2
+                    if num % 3 == 0:
+                        factor.append(3)
+                        num /= 3
             else : factor.append(num)
 
         return factor
