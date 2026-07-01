@@ -1,3 +1,4 @@
 class PrimeFactor:
     def factorial(self, n):
-        return []
+        factor = []
+        return factor
