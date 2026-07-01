@@ -2,13 +2,13 @@ class PrimeFactor:
     def factorial(self, num):
         factor = []
 
-        if num == 4 :
-            self.factorial(2)
-            self.factorial(2)
-        if num == 6 :
-            self.factorial(2)
-            self.factorial(3)
+
         if num > 1 :
-            factor.append(num)
+            if num == 4:
+                while num > 1:
+                    if num % 2 == 0:
+                        factor.append(2)
+                        num /= 2
+            else : factor.append(num)
 
         return factor
