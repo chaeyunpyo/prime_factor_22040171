@@ -1,8 +1,8 @@
 class PrimeFactor:
-    def factorial(self, n):
+    def factorial(self, num):
         factor = []
 
-        if n == 2 :
-            factor = [2]
+        if num == 2 :
+            factor.append(2)
 
         return factor
